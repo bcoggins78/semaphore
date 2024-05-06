@@ -1,7 +1,9 @@
 ---
-- hosts: servers
+- hosts: all
   become: true
-  apt:
+  tasks:
+  - name: Update Server
+    apt:
     - upgrade: yes
       update_cache: yes
       cache_valid_time: 86400
