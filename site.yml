@@ -10,7 +10,7 @@
       only_upgrade: yes
     register: apt_update_status
 
-    - name: Remove packages not needed anymore
-      apt:
-        autoremove: yes
+  - name: Remove packages not needed anymore
+    apt:
+      autoremove: yes
         
